@@ -24,8 +24,8 @@ public class UsuarioController {
 
     @GetMapping("/Saludo")
     public String saludoProfe(){
-        return "Esperamos el 7";
-    }
+        return "Profe esperamos exito";
+    } 
 
     @GetMapping("/{id}")
     public Optional<Usuario> obtener(@PathVariable Long id) {
