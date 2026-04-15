@@ -46,4 +46,9 @@ public class UsuarioController {
     public boolean eliminar(@PathVariable Long id) {
         return usuarioService.eliminar(id);
     }
+
+    @GetMapping("/saludo2")
+    public String saludo2(){
+        return "Hola profe!"
+    }
 }
