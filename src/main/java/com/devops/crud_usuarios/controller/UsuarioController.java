@@ -22,6 +22,11 @@ public class UsuarioController {
         return usuarioService.listar();
     }
 
+    @GetMapping("/Saludo")
+    public String saludoProfe(){
+        return "Esperamos el 7";
+    }
+
     @GetMapping("/{id}")
     public Optional<Usuario> obtener(@PathVariable Long id) {
         return usuarioService.obtenerPorId(id);
